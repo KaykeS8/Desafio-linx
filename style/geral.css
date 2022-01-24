@@ -1,0 +1,388 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --main-color: #707070;
+    --color-text: #888888;
+    --color-shadow: #00000029;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeedv;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--main-color);
+    padding: 2rem;
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 100vw;
+    height: 55vh;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% calc(100% - 90px));
+}
+
+header .header-paragraph {
+    color: var(--white);
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+header h1 {
+    color: var(--white);
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -1rem;
+    margin-bottom: .6rem;
+}
+
+header p {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+a.btn {
+    background-color: var(--white);
+    color: var(--color-text);
+    padding: .5rem 2rem;
+    margin-right: 3rem;
+    border-radius: 4px;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+}
+
+/* AJUDE O AlGORITIMO */
+
+.algoritimo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    height: 32rem;
+}
+
+.algoritimo-text {
+    max-width: 52rem;
+}
+
+.algoritimo-text h2 {
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.algoritimo-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.form-algoritimo {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.form-algoritimo label {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: .3rem;
+    margin-top: 1.2rem;
+}
+
+.form-algoritimo input {
+    border: 1px solid #707070;
+    padding: .2rem;
+}
+
+.sex {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0;
+}
+
+.sex label {
+    margin: 0 0 0 .5rem;
+}
+
+.masculino {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.femenino {
+    display: flex;
+    align-items: center;
+}
+
+.btn-sex-form {
+    background-color: var(--white);
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: .5rem;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+/* PRODUTOS */
+
+
+.title-secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--color-text);
+    font-weight: 400;
+    margin: 3rem 0;
+}
+
+.title-secao::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 25vw;
+    margin-right: 1rem;
+    background-color: var(--color-text);
+}
+
+.title-secao::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 25vw;
+    margin-left: 1rem;
+    background-color: var(--color-text);
+}
+
+
+.list-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.box {
+    width: 20rem;
+    height: 15rem;
+    border: 1px solid var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.produto-info h3 {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.descricao-produto {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.priceOld {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: .5rem;
+}
+
+.priceNew {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.priceInTheCard {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: .5rem;
+}
+
+.list-produtos button {
+    width: 20rem;
+    background-color: var(--white);
+    border: 1px solid var(--main-color);
+    color: var(--color-text);
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.produtos-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos-btn button{
+    width: 26rem;
+    border: 1px solid var(--main-color);
+    background-color: var(--white);
+    color: var(--color-text);
+    font-size: 1.6rem;
+    padding: .3rem;
+    border-radius: .4rem;
+    margin: 2rem 0 8rem 0;
+    cursor: pointer;
+}
+
+/* COMPARTILHE */
+
+.compartilhe h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.compartilhe h2::before {
+    content: '';
+    display: inline-block;
+    height: .2rem;
+    width: 25vw;
+    margin-right: 1rem;
+    background-color: var(--color-text);
+}
+
+.compartilhe h2::after {
+    content: "";
+    display: inline-block;
+    height: .2rem;
+    width: 25vw;
+    margin-left: 1rem;
+    background-color: var(--color-text);
+}
+
+.compartilhe p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+}
+
+.form-compartilhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-compartilhar label{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+.input-amigo {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-amigo input {
+    border: 1px solid var(--main-color);
+    width: 34rem;
+    margin-right: 2rem;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email input {
+    border: 1px solid var(--main-color);
+    width: 34rem;
+}
+
+.compartilhe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.compartilhe button {
+    width: 26rem;
+    padding: .3rem;
+    border: 1px solid var(--main-color);
+    border-radius: .4rem;
+    background-color: var(--white);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    width: 100vw;
+    height: 40vh;
+    clip-path: polygon(0% 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footer p {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white);
+}
