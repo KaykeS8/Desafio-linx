@@ -54,7 +54,7 @@ a {
     top: -10px;
     left: 0;
     width: 100vw;
-    height: 55vh;
+    height: 55%;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% calc(100% - 90px));
 }
 
