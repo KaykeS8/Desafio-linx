@@ -1,1 +1,94 @@
 @import url(geral.css);
+
+/* BREAKPOINTS
+    --mobile: 600px;
+    --tablet: 900px;
+    --tablet-Landscape: 1200px;
+    --desktop: 1800px;
+*/
+
+@media screen and (max-width:900px) {
+
+    /* HEADER */
+    .header {
+        height: 65vh;
+        width: 100%;
+        padding: 0;
+    }
+
+    header .header-paragraph {
+        padding-top: 1rem;
+        margin: 0;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 25rem);
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+
+
+    .btn {
+        text-align: center;
+    }
+
+    /* ALGORITIMO */
+
+    .algoritimo {
+        margin-bottom: 25rem;
+    }
+
+    .algoritimo-text {
+        margin: 0 auto;
+    }
+
+    .form-algoritimo {
+        margin: 3rem auto;
+    }
+
+    /* PRODUTOS */
+
+    .list-produtos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .produto-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao-produto {
+        max-width: 20rem;
+    }
+
+    /* COMPARTILHE */
+
+    .input-amigo input {
+        width: 25rem;
+    }
+
+    .input-email input {
+        width: 25rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    /* HEADER */
+    header .header-paragraph {
+        padding-top: 3rem;
+    }
+}

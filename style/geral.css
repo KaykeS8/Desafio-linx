@@ -42,6 +42,7 @@ a {
 .container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 /* HEADER */
@@ -105,10 +106,12 @@ a.btn {
     align-items: center;
     margin-bottom: 6rem;
     height: 32rem;
+    /* border: 1px solid red; */
 }
 
 .algoritimo-text {
     max-width: 52rem;
+    border: 1px solid blue;
 }
 
 .algoritimo-text h2 {
@@ -129,6 +132,7 @@ a.btn {
     display: flex;
     flex-direction: column;
     width: 340px;
+    border: 1px solid red;
 }
 
 .form-algoritimo label {
@@ -186,6 +190,7 @@ a.btn {
     color: var(--color-text);
     font-weight: 400;
     margin: 3rem 0;
+    border: 1px solid green;
 }
 
 .title-secao::before {
@@ -212,6 +217,7 @@ a.btn {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    border: 1px solid blue;
 }
 
 .box {
