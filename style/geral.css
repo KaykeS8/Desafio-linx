@@ -41,7 +41,7 @@ a {
 
 .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
 }
 
@@ -53,8 +53,8 @@ a {
     position: relative;
     top: -10px;
     left: 0;
-    width: 100vw;
-    height: 55%;
+    width: 100%;
+    height: 30rem;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% calc(100% - 90px));
 }
 
@@ -111,7 +111,6 @@ a.btn {
 
 .algoritimo-text {
     max-width: 52rem;
-    border: 1px solid blue;
 }
 
 .algoritimo-text h2 {
@@ -132,7 +131,6 @@ a.btn {
     display: flex;
     flex-direction: column;
     width: 340px;
-    border: 1px solid red;
 }
 
 .form-algoritimo label {
@@ -190,7 +188,6 @@ a.btn {
     color: var(--color-text);
     font-weight: 400;
     margin: 3rem 0;
-    border: 1px solid green;
 }
 
 .title-secao::before {
@@ -217,7 +214,6 @@ a.btn {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
-    border: 1px solid blue;
 }
 
 .box {
@@ -381,7 +377,6 @@ a.btn {
 .footer {
     background-color: var(--main-color);
     padding: 2rem;
-    width: 100vw;
     height: 40vh;
     clip-path: polygon(0% 40%, 100% 0, 100% 100%, 0% 100%);
 }
