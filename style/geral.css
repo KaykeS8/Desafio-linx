@@ -223,6 +223,11 @@ a.btn {
     margin-bottom: 1rem;
 }
 
+.box img {
+    display: block;
+    margin: 0 auto;
+}
+
 .produto-info h3 {
     font-size: 1.4rem;
     color: var(--color-text);
