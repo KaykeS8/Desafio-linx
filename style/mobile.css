@@ -8,6 +8,7 @@
 */
 
 @media screen and (max-width:900px) {
+
     /* HEADER */
     .header {
         height: 30rem;
@@ -21,17 +22,16 @@
 
     .nav {
         display: grid;
-        grid-template-columns: repeat(2, 25rem);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        justify-content: center;
-        margin-top: 1rem;
         gap: 1rem;
     }
-    
-    
+
+
     a.btn {
-        margin-right: 0;
+        margin: auto;
         text-align: center;
+        width: 18rem;
     }
 
     /* ALGORITIMO */
@@ -79,6 +79,7 @@
 
     /* FOOTER */
     .footer {
+        width: 100%;
         padding: 0;
     }
 
@@ -88,6 +89,7 @@
     /* HEADER */
 
     .header {
+        width: 100%;
         padding: 0;
         height: 40rem;
     }
@@ -106,11 +108,6 @@
     header p {
         text-align: left;
         padding-left: 1rem;
-    }
-
-    a.btn {
-        /* padding: .2rem; */
-        width: auto;
     }
 
     /* ALGORITIMO */
@@ -176,4 +173,36 @@
         width: 100%;
     }
 
+}
+
+@media screen and (max-width:300px) {
+
+    .container {
+        margin-top: 20rem;
+    }
+
+    /* HEADER */
+
+    .header {
+        height: 54rem;
+    }
+
+    header .header-paragraph {
+        padding-top: 1rem
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* PRODUTOS */
+
+    .produto-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
