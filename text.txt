@@ -1,0 +1,112 @@
+  <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <div class="box"></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">Nome do produto</h3>
+                            <p class="descricao-produto">Descrição do produto um pouco maior, com duas linhas ou três
+                                que
+                                explica melhor do que se
+                                trata.</p>
+                            <p class="priceOld">De: R$23,99</p>
+                            <p class="priceNew">Por: R$19,99</p>
+                            <p class="priceInTheCard">ou 2x de R$9,99</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                    </div>
