@@ -1,32 +1,51 @@
 export default function initRequisicao() { }
 
 
-const box = document.querySelectorAll('.box')
-const titleProduct = document.querySelector('.box-title')
-const productsDescription = document.querySelector('.descricao-produto')
-const priceOld = document.querySelector('.priceOld')
-const priceNew = document.querySelector('.priceNew')
-const priceInTheCard = document.querySelector('.priceInTheCard')
+
+async function fetchProdutos() {
+    const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1`
+    const response = await fetch(url)
+    const productsDados = await response.json()
+
+    const produtos = productsDados.products
+    const listProdutos = document.querySelector('.list-produtos')
+    
+    
+    const boxList = createBox(produtos)
+    function createBox() {
+        return produtos.map(item => {
+            const { name, image, oldPrice, price, description} = item
+            const {count, value} = item.installments
+            return (
+                `
+                <div class="produto-info">
+                        <div class="box"><img src="${image}" alt=""Produtos></div>
+                        <div class="box-flex">
+                            <h3 class="box-title">${name}</h3>
+                            <p class="descricao-produto">${description}.</p>
+                            <p class="priceOld">De: R$${oldPrice}</p>
+                            <p class="priceNew">Por: R$${price}</p>
+                            <p class="priceInTheCard">ou ${count}x de R$${value}</p>
+                            <button type="submit">Comprar</button>
+                        </div>
+                </div>
+                `
+            )
+        })
+    }
+
+    function insertInTheDom(dom) {
+        const contentHtml = dom.join('')
+        listProdutos.innerHTML = contentHtml
+    }
+
+    insertInTheDom(boxList)
 
 
-async function requisicao() {
-    const url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
-    const reponse = await fetch(url)
-    const productsJson = await reponse.json()
 
-    const numberRandom = Math.floor(Math.random() * (7 - 0) + 0)
-    const imageRandom = productsJson.products[numberRandom].image
 
-    const img = document.createElement('img')
-    const srcImgProducts = img.src = `${imageRandom}`
-    const altImgProducts = img.alt = 'Produtos'
-
-    box.forEach((item) => {
-        item.innerHTML = `<img src="${srcImgProducts}" alt="${altImgProducts}">`
-    })
 
 }
 
 
-requisicao()
-
+fetchProdutos()
