@@ -1,8 +1,6 @@
 export default function initRequisicao() { }
 
 
-const url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
-
 const box = document.querySelectorAll('.box')
 const titleProduct = document.querySelector('.box-title')
 const productsDescription = document.querySelector('.descricao-produto')
@@ -11,25 +9,24 @@ const priceNew = document.querySelector('.priceNew')
 const priceInTheCard = document.querySelector('.priceInTheCard')
 
 
-async function fectchProdutos() {
-    const response = await fetch(url)
-    const dadosResponse = await response.json()
-    console.log(dadosResponse.products[0].name)
+async function requisicao() {
+    const url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
+    const reponse = await fetch(url)
+    const productsJson = await reponse.json()
+
+    const numberRandom = Math.floor(Math.random() * (7 - 0) + 0)
+    const imageRandom = productsJson.products[numberRandom].image
 
     const img = document.createElement('img')
-    const srcImgProduct = img.src = `${dadosResponse.products[0].image}`
-    const altImgProduct = img.alt = 'Produto'
+    const srcImgProducts = img.src = `${imageRandom}`
+    const altImgProducts = img.alt = 'Produtos'
+
     box.forEach((item) => {
-        console.log(item)
-        item.innerHTML += `<img src="${srcImgProduct}" alt="${altImgProduct}">`
+        item.innerHTML = `<img src="${srcImgProducts}" alt="${altImgProducts}">`
     })
 
-
-    titleProduct.innerText = dadosResponse.products[0].name
-    productsDescription.innerText = dadosResponse.products[0].description
-    priceOld.innerHTML = ` <p class="priceOld">De: R$${dadosResponse.products[0].oldPrice}</p>`
-    priceNew.innerHTML = `<p class="priceNew">Por: R$${dadosResponse.products[0].price}</p>`
-    priceInTheCard.innerHTML = `<p class="priceInTheCard">ou ${dadosResponse.products[0].installments.count}x de R$${dadosResponse.products[0].installments.value}</p>`
 }
 
-fectchProdutos()
+
+requisicao()
+
